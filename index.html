@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/icon-header.png">
+    <title>Linux: Um sistema operacional que funciona em código aberto</title>
+
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-red">Linux</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linux">Linux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instalacao">Instalação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#distribuicao">Distribuição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------Carrossel---------------------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/wallpaperlinux.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------Carrossel---------------------------------------------->
+
+
+    <!----------------------------------------------Section Linux---------------------------------------------->
+    <section id="linux" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="linux-foto">
+                        <img src="img/pinguin-linux.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>O que é Linux?</h2>
+                        <p>O Linux, à semelhança do Windows (Microsoft) e do macOS (Apple), é um sistema operacional
+                            baseado em Unix desenvolhido para desktops, mas que também é utilizado em servidores,
+                            smartphones, tablets e outras categorias de dispositivos, como caixas bancárias.
+                            Diferentemente de seus concorrentes mais renomados, o Linux não teve sua origem no
+                            âmbito comercial, sendo que seu software e desenvolvimento são realizados com código
+                            aberto, o que implica que qualquer indivíduo pode criar e distribuir aplicativos para
+                            ele.
+                        </p>
+                        <p>A estrutura fundamental do Linux consiste em um kernel, um software elaborado para
+                            possibilitar a comunicação entre outros programas e interpretar comandos para a unidade
+                            de processamento e outros componentes eletrônicos. Entretanto, para seu funcionamento
+                            adequado, também são necessários aplicativos específicos e as bibliotecas
+                            correspondentes a esses aplicativos.
+                        </p>
+                        <p class="ultimo-p">Isso implica que um utilizador de Linux pode optar entre diversas
+                            aplicações para
+                            realizar a mesma tarefa, seja ela edição de texto, interfaces gráficas ou mesmo prompts
+                            de comando. Esse processo é semelhante à escolha entre Chrome e Firefox: ambos são
+                            navegadores, capazes de executar as mesmas funções, mas apresentando diferentes formas e
+                            aparências.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>A origem</h2>
+                        <p>O nome Linux surgiu da mistura de Linus + Unix. Linus é o nome do criador do Linux,
+                            Linus Torvalds. E Unix, é o nome de um sistema operacional de grande porte, no qual
+                            contaremos sua história agora, para que você entenda melhor a do Linux. A origem do Unix
+                            tem ligação com o sistema operacional Multics, projetado na década de 1960. Esse projeto
+                            era realizado pelo Massachusets Institute of Technology (MIT), pela General Eletric (GE)
+                            e pelos laboratórios Bell (Bell Labs) e American Telephone na Telegraph (AT&T). A
+                            intenção era de que o Multics tivesse características de tempo compartilhado (vários
+                            usuários compartilhando os recursos de um único computador), sendo assim, o sistema mais
+                            arrojado da época. Em 1969, já exisita uma versão do Multics rodando num computador
+                            GE645.
+                        </p>
+                        <p>Ken Thompsom era um pesquisador do Multics e trabalhava na Bell Labs. No entanto, a
+                            empresa se retirou do projeto tempos depois, mas ele continuou seus estudos no sistema.
+                            Desde então, sua idéia não era continuar no Multics original e sim criar algo menor, mas
+                            que conservasse as idéias básicas do sistema. A partir daí, começa a saga do sistema
+                            Unix. Brian Kernighan, também pesquisador da Bell Labs, foi quem deu esse nome.
+                        </p>
+                        <p class="ultimo-p">Em 1973, outro pesquisador da Bell Labs, Dennis Ritchie, rescreveu todo
+                            o sistema Unix
+                            numa linguagem de alto nível, chamada C, desenvolvida por ele mesmo. Por causa disso, o
+                            sistema passou a ter grande aceitação por usuários externos à Bell Labs.
+
+                            Entre 1977 e 1981, a AT&T, alterou o Unix, fazendo algumas mudanças particulares e
+                            lançou o System III. Em 1983, após mais uma série de modificações, foi lançado o
+                            conhecido Unix System IV, que passou a ser vendido. Até hoje esse sistema é usado no
+                            mercado, tornando-se o padrão internacional do Unix. Esse sistema é comercializado por
+                            empresas como IBM, HP, Sun, etc. O Unix, é um sistema operacional muito caro e é usado
+                            em computadores poderosos (como mainframes) por diversas multinacionais.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Os softwares de Windows são todos compatíveis com o Linux?</h2>
+                        <p>Não, os softwares desenvolvidos para Windows não são automaticamente compatíveis com o
+                            Linux. Isso ocorre devido a diferenças fundamentais entre os dois sistemas operacionais,
+                            como a arquitetura do sistema, as bibliotecas e os padrões de API (Interface de
+                            Programação de Aplicativos).
+                        </p>
+                        <p>Em resumo, a compatibilidade entre softwares do Windows e Linux varia e geralmente requer
+                            esforço adicional para tornar os aplicativos do Windows executáveis no Linux. É
+                            recomendável verificar se há alternativas nativas para Linux ou considerar o uso de
+                            emuladores ou máquinas virtuais quando necessário.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="windows-linux">
+                        <img src="img/windows-linux.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Section Linux---------------------------------------------->
+
+
+    <!----------------------------------------------Section Sobre---------------------------------------------->
+    <section id="sobre" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Como aprender usar Linux?</h2>
+                        <p>Aprender a usar o Linux pode variar de pessoa para pessoa, dependendo do seu nível de
+                            experiência com sistemas operacionais e da sua disposição para aprender. Linux é um
+                            sistema operacional de código aberto que oferece muita flexibilidade e controle, mas
+                            também pode ser desafiador para iniciantes. Aqui estão alguns pontos a serem
+                            considerados:
+                        </p>
+                        <div class="fotos-instalacao">
+                            <img src="img/9.png">
+                            <img src="img/10.png">
+                            <img src="img/11.png">
+                        </div>
+                        <p>Em resumo, aprender a usar o Linux pode ser complicado no início, mas muitas pessoas
+                            encontram o sistema operacional gratificante devido à sua flexibilidade e controle. Se
+                            você estiver disposto a dedicar tempo e esforço para aprender, poderá adquirir
+                            habilidades valiosas no uso do Linux. Começar com uma distribuição amigável para
+                            iniciantes e explorar a vasta documentação disponível é um bom ponto de partida.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2 class="espaco-h2">O que é root?</h2>
+                        <p>A palavra inglesa root significa raiz. E no mundo tecnológico, o termo root é usado para
+                            caracterizar o processo que permite o uso de um sistema operacional baseado no
+                            Unix/Linux como superadministrador.
+                        </p>
+                        <p>E como o sistema operacional Android é baseado no Linux, dá para fazer root e administrar
+                            todas as funções do smartphone, com acesso à sua "raiz", o que pode trazer diversos
+                            benefícios. Por segurança, os celulares Android vêm com uma proteção, que limita o
+                            acesso do usuário
+                            comum a alguns dados, como pastas importantes do sistema, por exemplo. Assim, você não
+                            corre o risco de excluir ou modificar algo acidentalmente, podendo até fazer com que o
+                            smartphone não funcione mais. Mas, fazendo root, o usuário passa a ter controle total de
+                            todas as funções do sistema.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2 align="center" class="espaco-h2">O que são respositórios?</h2>
+                        <img class="repositorios-img" src="img/repositorios.png">
+                        <p>Em um contexto de sistemas Linux, um "repositório" refere-se a um local centralizado onde
+                            o software é armazenado e gerenciado. Isso permite que os usuários instalem, atualizem e
+                            removam programas e pacotes de software de forma organizada e eficiente. Os repositórios
+                            são uma parte fundamental dos sistemas de gerenciamento de pacotes usados em
+                            distribuições Linux, como o APT (Advanced Package Tool) usado no Debian e no Ubuntu, o
+                            YUM (Yellowdog Updater, Modified) usado no Red Hat e no CentOS, e o Zypper usado no
+                            openSUSE, entre outros.
+                        </p>
+                        <p>Em resumo, os repositórios são uma parte fundamental do ecossistema de software do Linux,
+                            permitindo que os usuários instalem, atualizem e gerenciem o software de maneira
+                            conveniente e segura.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2 class="espaco-h2">O que são KDE e Gnome? Qual é melhor?</h2>
+                        <p>O KDE e o GNOME são dois dos ambientes de desktop mais populares para sistemas operacionais
+                            baseados em Linux e Unix. Eles fornecem interfaces gráficas de usuário (GUI) para interagir
+                            com o sistema operacional e os aplicativos. Ambos têm suas próprias abordagens de design e
+                            funcionalidade, e a escolha entre eles geralmente se resume a preferências pessoais.
+                        </p>
+                        <p>Quanto qual é melhor, não existe uma resposta única. A escolha entre o KDE e o
+                            GNOME é altamente subjetiva e depende das preferências do usuário. Alguns preferem o KDE
+                            pela sua flexibilidade e pela quantidade de opções de personalização, enquanto outros
+                            preferem o GNOME pela sua simplicidade e design elegante.
+                        </p>
+                        <p>A melhor maneira de determinar qual ambiente de desktop é ideal para você é experimentar
+                            ambos e ver qual deles se adapta melhor às suas necessidades e estilo de uso. A maioria das
+                            distribuições Linux permite que você escolha entre o KDE e o GNOME durante a instalação ou
+                            após a instalação, para que você possa experimentar ambos antes de tomar uma decisão.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Section Sobre---------------------------------------------->
+
+
+    <!----------------------------------------------Section Instalação---------------------------------------------->
+    <section id="instalacao" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Passos para a Instalação do Linux</h2>
+                        <div class="fotos-instalacao">
+                            <img src="img/1.png">
+                            <img src="img/2.png">
+                            <img src="img/3.png">
+                            <img src="img/4.png">
+                        </div>
+                        <div class="fotos-instalacao">
+                            <img src="img/5.png">
+                            <img src="img/6.png">
+                            <img src="img/7.png">
+                            <img src="img/8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Preciso apagar meu windows para instalar o linux?</h2>
+                        <p>Não é necessário apagar o Windows para instalar o Linux no mesmo computador. Você pode
+                            ter ambos os sistemas operacionais coexistindo no mesmo sistema. Isso é conhecido como
+                            "dual boot". O dual boot permite que você escolha qual sistema operacional deseja usar
+                            sempre que iniciar o computador.
+                        </p>
+                        <p class="ultimo-p">Lembre-se de que a configuração de um dual boot requer algum
+                            conhecimento e cuidado,
+                            especialmente ao mexer nas partições do disco rígido. Certifique-se de seguir as
+                            instruções da distribuição Linux escolhida e faça backup de seus dados antes de começar.
+                            Além disso, esteja ciente de que as ações que você toma durante o processo de instalação
+                            do Linux podem afetar tanto o Windows quanto o Linux, por isso, é importante seguir as
+                            instruções com atenção.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Posso testar o Linux sem instalar?</h2>
+                        <p class="ultimo-p">Sim, você pode testar o Linux sem a necessidade de instalá-lo no seu
+                            computador. Isso é
+                            possível graças a distribuições Linux que são projetadas para serem "Live" ou "Live
+                            CD/USB". Essas distribuições são criadas de forma a permitir que você execute o Linux a
+                            partir de um CD, DVD ou unidade USB sem a necessidade de instalação.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Como instalar programas no linux?</h2>
+                        <p>Para instalar programas no Linux, você usa uma ferramenta chamada "gerenciador de
+                            pacotes". É como uma loja de aplicativos. Você digita um comando para buscar e instalar
+                            programas. Cada distribuição Linux pode usar comandos diferentes, mas o processo geral
+                            é:<br>
+                            - Abra o Terminal, que é como uma janela de comando.<br>
+                            - Digite o comando para atualizar a lista de programas disponíveis. Isso ajuda a ter a
+                            lista mais recente.<br>
+                            - Em seguida, use outro comando para instalar o programa desejado. Isso fará o download
+                            e
+                            a instalação automaticamente.<br>
+                            - Espere até que a instalação esteja concluída.<br>
+                            - Agora, o programa está instalado e pronto para ser usado. Você pode digitá-lo no
+                            Terminal ou procurá-lo no menu de aplicativos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Section Instalação---------------------------------------------->
+
+
+    <!----------------------------------------------Section Distribuição---------------------------------------------->
+    <section id="distribuicao" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>O que é uma distribuição Linux?</h2>
+                        <p class="ultimo-p">Uma distribuição Linux® é um sistema operacional instalável baseado no
+                            kernel do Linux
+                            que dá suporte a bibliotecas, repositórios e programas do usuário. Cada versão da
+                            comunidade e do fornecedor é considerada uma distribuição.
+                            O sistema operacional Linux é open source e disponibilizado sob a Licença Pública Geral
+                            GNU (GPL). Por isso, qualquer pessoa pode executar, analisar, modificar e redistribuir o
+                            código-fonte ou até mesmo vender cópias dessas alterações. Em comparação, os sistemas
+                            tradicionais como Unix, Microsoft Windows e MacOS são proprietários e permitem muito
+                            menos modificações.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Como escolher uma distribuição Linux?</h2>
+                        <p class="ultimo-p">Escolher a distribuição Linux certa depende do seu caso de uso e dos
+                            requisitos de
+                            ferramenta. Determinadas distribuições Linux funcionam melhor para diferentes
+                            finalidades. Algumas distribuições sãoprojetadas para ambientes de desktop Linux (como
+                            XFCE, Raspberry Pi e Cinnamon), enquanto outras são projetadas para dar suporte a
+                            sistemas de TI de back-end (como servidores web ou empresariais).
+                            Ao escolher sua distribuição Linux, analise primeiro se você precisa de uma empresarial
+                            ou da comunidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Distribuição Kali Linux</h2>
+                        <p>O Kali Linux é uma distribuição de sistema operacional baseada no Debian, projetada
+                            especificamente para fins de segurança cibernética e testes de penetração. Ele é mantido
+                            e desenvolvido pela Offensive Security, uma empresa especializada em segurança da
+                            informação. O Kali Linux é uma das distribuições Linux mais populares para profissionais
+                            de segurança cibernética e hackers éticos, pois fornece uma ampla gama de ferramentas e
+                            recursos projetados para testar a segurança de sistemas e redes.
+                        </p>
+                        <p>É importante observar que o Kali Linux é uma ferramenta poderosa, mas deve ser usada de
+                            forma ética e legal. O uso inadequado ou ilegal do Kali Linux pode resultar em
+                            consequências legais graves. É destinado a profissionais de segurança cibernética,
+                            pesquisadores de segurança e hackers éticos que têm permissão para testar sistemas e
+                            redes para identificar vulnerabilidades e fortalecer a segurança.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="kalilinux">
+                        <img src="img/kali-linux.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Section Distribuição---------------------------------------------->
+
+
+    <!----------------------------------------------Section Curiosidades---------------------------------------------->
+    <section id="curiosidades" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Linux é melhor que Windows?</h2>
+                        <p>A escolha entre o Linux e o Windows depende das suas necessidades específicas.
+                            Muitas pessoas usam ambos os sistemas operacionais em diferentes contextos, aproveitando
+                            as vantagens de cada um. Se você estiver considerando mudar para o Linux, é aconselhável
+                            testá-lo primeiro em um ambiente de dual boot ou em uma máquina virtual para ver se
+                            atende às suas necessidades.
+                        </p>
+                        <p class="ultimo-p">Tanto o Windows, quanto o Linux possuem desvantagens e vantagens. Uma
+                            desvantagem do Windows são as atualizações forçadas, e uma vantagem é a compatibilidade
+                            de software,
+                            isto é, a maioria dos programas são desenvolvidos para o Windows. Em Linux, uma vantagem
+                            é a segurança,
+                            pois tem menor vulnerabilidade a malware, agora uma desvantagem é a compatibilidade de
+                            software, pois
+                            a maioria dos programas não são desenvolvidos para o Linux, e sim para o Windows.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="curiosidades-foto">
+                        <img src="img/imagem5.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>O Linux não pega vírus?</h2>
+                        <p>Não é estritamente verdade que o Linux seja imune a vírus, mas é mais preciso dizer que o
+                            Linux é menos suscetível a vírus e malware em comparação com sistemas operacionais como
+                            o Windows. Por exemplo, o Linux tem menor participação no mercado, então ele não é muito
+                            visado. Ele possui um modelo de segurança mais robusto, isso é muito bom para quem
+                            trabalhar com cyberseguranaça e também PARA hackers-éticos, mas isso também pode abrir
+                            portas para hackers mal-intecionados, uma vez que a maioria dos hackers mal-intecionados
+                            utilizam o Linux.
+                        </p>
+                        <p>No entanto, não é correto afirmar que o Linux é completamente imune a vírus e malware. À
+                            medida que o Linux se torna mais popular em ambientes corporativos e em servidores, a
+                            atenção dos criadores de malware pode aumentar. Além disso, os ataques direcionados a
+                            sistemas Linux podem ocorrer, especialmente em servidores. Portanto, é importante manter
+                            seu sistema Linux atualizado, usar boas práticas de segurança e ter um software
+                            antivírus adequado, especialmente em ambientes de servidor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-13 col-12 ps-lg-4 mt-md-2">
+                    <div class="about-text">
+                        <h2>Consigo instalar meus jogos no Linux?</h2>
+                        <p>Sim, é possível. Não apenas instalar, é claro, mas também jogar e se divertir bastante.
+                            Embora o catálogo de jogos para Linux não seja tão grande quanto o do Windows, ele também
+                            possui um tamanho considerável. Como resultado, um grande número de pessoas pode acabar se
+                            beneficiando,
+                            principalmente devido a iniciativas, projetos e lançamentos como o Steam Deck e o Proton
+                            (ambos da Valve), por exemplo.
+                        </p>
+                        <p> É claro que grandes lançamentos e/ou franquias não aparecem na plataforma aberta. Pelo
+                            menos, não no momento do lançamento.
+                            Porém, cada vez mais games excelentes são disponibilizados para Linux. Cada vez mais
+                            projetos bacanas como o Lutris (open source) e o Wine, por exemplo, deixam a nossa vida bem
+                            mais fácil.
+                            Existem comunidades muito ativas espalhadas pelo mundo, trabalhando para trazer ótimos games
+                            e plataformas para o sistema operacional do pinguim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Section Curiosidades---------------------------------------------->
+
+
+    <footer class="bg-custom p-2 text-center">
+        <div class="container">
+            <p class="text-white">Trabalho Acadêmico - Sem fins lucrativos<br>
+                Ivan Silva 2023 - ©Todos os direitos reservados</p>
+        </div>
+        <div class="seta">
+            <a href="#"><img src="img/seta.png">
+        </div>
+    </footer>
+
+    <!-- All Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
